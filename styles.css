@@ -1,7 +1,7 @@
 .area {
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .temperature {
@@ -37,7 +37,7 @@ div strong {
 }
 
 #city {
-    padding: 20px 200px 20px 10px;
+    padding: 20px 280px 20px 10px;
     border: 1px solid #d5e1e2;
     border-radius: 6px;
 }
@@ -57,8 +57,11 @@ div strong {
 h1{font-family: "Acme", sans-serif;
     font-size: 45px;
     color: #61b7ed;
-    padding:0px 50px 30px;
-    font-style: italic; }
+    padding:0px 0px 0px;
+   font-style: italic; }
 
 .material-symbols-outlined {
-   font-size:50px; }
+   font-size: 100px; }
+
+#footer { padding: 50px 0px 30px 0px;
+   }
