@@ -2,11 +2,15 @@ function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#current-temperature");
   let temperature = Math.round(response.data.temperature.current);
-  let descriptionElement=document.querySelector("#condition");
+  let descriptionElement = document.querySelector("#condition");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind-speed");
 
-  temperatureElement.innerHTML = temperature;
-  descriptionElement.innerHTML=response.data.condition.description;
+  descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  windElement.innerHTML = `${response.data.wind.speed}km/h`;
 }
+
 function changeCity(event) {
   event.preventDefault();
 
